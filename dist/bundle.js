@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
-/*!*************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
-  \*************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/Main/style.css":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Main/style.css ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar urlEscape = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/url-escape.js */ \"./node_modules/css-loader/dist/runtime/url-escape.js\");\nvar ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ./Aaargh.ttf */ \"./src/Aaargh.ttf\"));\n\n// Module\nexports.push([module.i, \"@font-face {\\r\\n  font-family: 'MyFont';\\r\\n  src:  url(\" + ___CSS_LOADER_URL___0___ + \") format('truetype');\\r\\n  font-weight: 600;\\r\\n  font-style: normal;\\r\\n}\\r\\n\\r\\n.hello {\\r\\n    color: red;\\r\\n    /* font-family: 'MyFont'; */\\r\\n    /* background: url('./icon.png'); */\\r\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar urlEscape = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/url-escape.js */ \"./node_modules/css-loader/dist/runtime/url-escape.js\");\nvar ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ./Aaargh.ttf */ \"./src/components/Main/Aaargh.ttf\"));\n\n// Module\nexports.push([module.i, \"@font-face {\\r\\n  font-family: 'MyFont';\\r\\n  src:  url(\" + ___CSS_LOADER_URL___0___ + \") format('truetype');\\r\\n  font-weight: 600;\\r\\n  font-style: normal;\\r\\n}\\r\\n\\r\\n.hello {\\r\\n    color: red;\\r\\n    font-family: 'MyFont';\\r\\n    /* background: url('./icon.png'); */\\r\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/Main/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -176,36 +176,59 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 
 /***/ }),
 
-/***/ "./src/Aaargh.ttf":
-/*!************************!*\
-  !*** ./src/Aaargh.ttf ***!
-  \************************/
+/***/ "./src/components/Main/Aaargh.ttf":
+/*!****************************************!*\
+  !*** ./src/components/Main/Aaargh.ttf ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"fonts/Aaargh.ttf\";\n\n//# sourceURL=webpack:///./src/Aaargh.ttf?");
+eval("module.exports = __webpack_require__.p + \"fonts/Aaargh.ttf\";\n\n//# sourceURL=webpack:///./src/components/Main/Aaargh.ttf?");
 
 /***/ }),
 
-/***/ "./src/data.xml":
-/*!**********************!*\
-  !*** ./src/data.xml ***!
-  \**********************/
+/***/ "./src/components/Main/data.xml":
+/*!**************************************!*\
+  !*** ./src/components/Main/data.xml ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = {\"note\":{\"to\":[\"Mary\"],\"from\":[\"John\"],\"heading\":[\"Reminder\"],\"body\":[\"Call Cindy on Tuesday\"]}}\n\n//# sourceURL=webpack:///./src/data.xml?");
+eval("module.exports = {\"note\":{\"to\":[\"Mary\"],\"from\":[\"John\"],\"heading\":[\"Reminder\"],\"body\":[\"Call Cindy on Tuesday\"]}}\n\n//# sourceURL=webpack:///./src/components/Main/data.xml?");
 
 /***/ }),
 
-/***/ "./src/icon.png":
-/*!**********************!*\
-  !*** ./src/icon.png ***!
-  \**********************/
+/***/ "./src/components/Main/icon.png":
+/*!**************************************!*\
+  !*** ./src/components/Main/icon.png ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"56ee4e05fe0b524bed7d4d81836748b3.png\";\n\n//# sourceURL=webpack:///./src/icon.png?");
+eval("module.exports = __webpack_require__.p + \"56ee4e05fe0b524bed7d4d81836748b3.png\";\n\n//# sourceURL=webpack:///./src/components/Main/icon.png?");
+
+/***/ }),
+
+/***/ "./src/components/Main/index.js":
+/*!**************************************!*\
+  !*** ./src/components/Main/index.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return component; });\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/components/Main/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icon.png */ \"./src/components/Main/icon.png\");\n/* harmony import */ var _icon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_icon_png__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data.xml */ \"./src/components/Main/data.xml\");\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_xml__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\r\nfunction component() {\r\n    let element = document.createElement('div');\r\n  \r\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\r\n    element.classList.add('hello');\r\n\r\n    // Add the image to our existing div.\r\n    var myIcon = new Image();\r\n    myIcon.src = _icon_png__WEBPACK_IMPORTED_MODULE_2___default.a;\r\n \r\n    element.appendChild(myIcon);\r\n    \r\n    console.log(_data_xml__WEBPACK_IMPORTED_MODULE_3___default.a);\r\n\r\n    return element;\r\n};\r\n  \r\n\n\n//# sourceURL=webpack:///./src/components/Main/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/Main/style.css":
+/*!***************************************!*\
+  !*** ./src/components/Main/style.css ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/components/Main/style.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/Main/style.css?");
 
 /***/ }),
 
@@ -217,18 +240,7 @@ eval("module.exports = __webpack_require__.p + \"56ee4e05fe0b524bed7d4d81836748b
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icon.png */ \"./src/icon.png\");\n/* harmony import */ var _icon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_icon_png__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data.xml */ \"./src/data.xml\");\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_xml__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\r\nfunction component() {\r\n    let element = document.createElement('div');\r\n  \r\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\r\n    element.classList.add('hello');\r\n\r\n    // Add the image to our existing div.\r\n    var myIcon = new Image();\r\n    myIcon.src = _icon_png__WEBPACK_IMPORTED_MODULE_2___default.a;\r\n \r\n    element.appendChild(myIcon);\r\n    \r\n    console.log(_data_xml__WEBPACK_IMPORTED_MODULE_3___default.a);\r\n\r\n    return element;\r\n}\r\n  \r\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/style.css":
-/*!***********************!*\
-  !*** ./src/style.css ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/style.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_Main_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Main/index */ \"./src/components/Main/index.js\");\n\r\n\r\ndocument.body.appendChild(Object(_components_Main_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
